@@ -14,6 +14,8 @@ for h in range(10):
 
 #pyramida 2 (bez extra premennej)
 for h in range (10):
+    # krasne zlozity vypocet.
+    # print("*"*(10-h))
     print("*"*((h+10)-2*h))
 
 
@@ -27,7 +29,11 @@ else:
 
 # prestupny rok range
 years= range(2000,2002)
+# v zadani bolo, ze rok chceme 2 inputy.. ale v zasade je to v poriadku
 for year in years:
+    # Ak je rok delitelny 400 , tak musi byt aj 4
+    # takze podmienka ide este zjednodusit
+    # if ((year % 4 == 0) and (year % 100 != 0)) or year % 400 == 0:
     if ((year % 4 == 0) and (year % 100 != 0)) or ((year % 4 == 0) and (year % 400 == 0)) :
        print(f"rok {year} je prestupny")
     else:
