@@ -27,8 +27,7 @@ def pyramida (zakladna,smer,centrovanie):
         if centrovanie== "center":
            if smer == "obratena":
                if h%2 != 0:
-                    row = "*" * (zakladna - h)
-                    print (row.center(zakladna))
+                    print (str("*" * (zakladna - h)).center(zakladna))
 
            else:
                 if h % 2 == 0:
@@ -41,7 +40,7 @@ def pyramida (zakladna,smer,centrovanie):
                  print("*" * (h + 1))
                  h += 1
 
-pyramida(10, "obraten","center")
+pyramida(10, "obratena","center")
 
 
 #
