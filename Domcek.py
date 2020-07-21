@@ -26,7 +26,7 @@ def pyramida (zakladna,smer,centrovanie):
     for h in range(zakladna):
         if centrovanie== "center":
            if smer == "obratena":
-              print(str("*"*(zakladna-h)).center(2*zakladna)) #neviem kde robim chybu, ze mi to centruje tak zvlastne
+              print(str("*"*(zakladna-h)).center(2*zakladna)) #neviem kde robim chybu, ze mi to centruje tak zvlastne 
            else:
               print(str("*" * (h + 1)).center(2*zakladna))
               h+=1
