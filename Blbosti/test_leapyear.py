@@ -1,5 +1,5 @@
 from unittest import TestCase
-from WPA_4 import leapyear
+from Blbosti.WPA_4 import leapyear
 
 
 class TestLeapyear(TestCase):
