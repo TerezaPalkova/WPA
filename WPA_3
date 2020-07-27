@@ -1,0 +1,34 @@
+#vytvor funkciu na obratenu pyramidu
+def pyramida (p):
+  for h in range(p):
+     print("*" * (p- h))
+  return p
+
+ #p=int(input("napis velkost zakladne:"))
+#pyramida(p)
+
+#Korytnacka
+
+import turtle
+import time
+
+
+t = turtle.Turtle()
+t.forward(200)
+t.setheading(90)
+#t.backwards(200)
+t.penup()
+t.left(90)
+t.forward(200)
+t.pendown()
+t.pencolor("RED")
+t.forward(200)
+t.left(90)
+t.forward(200)
+
+time.sleep(10)
+
+for x in range(4):
+     t.forward(200)
+     t.left(90)
+time.sleep(10)

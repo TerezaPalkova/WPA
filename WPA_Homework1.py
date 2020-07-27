@@ -38,3 +38,4 @@ for year in years:
        print(f"rok {year} je prestupny")
     else:
         print(f"rok {year} je neprestupny")
+
