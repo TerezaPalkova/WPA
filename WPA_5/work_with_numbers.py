@@ -1,4 +1,4 @@
-# work_with_numbers.py
+# work_with_numbers.py.py
 
 # Zadávam celé čísla ako vstup programu z klávesnice. Zadávanie končím prázdnym riadkom.
 # Program mi na výstupe zobrazí:
