@@ -1,5 +1,5 @@
 from unittest import TestCase
-from DU_4_mena import mena
+from WPA_4.DU_4_mena import mena
 
 
 class TestMena(TestCase):
