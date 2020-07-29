@@ -1,7 +1,7 @@
 from unittest import TestCase
 from WPA_5.work_with_numbers import ukazatele_zoznamu
 
-data = (10, 8, 64, 100,12,-5)
+data = [10, 8, 64, 100,12,-5]
 class TestUkazatele_zoznamu(TestCase):
     def test_ukazatele_zoznamu(self):
         d = ukazatele_zoznamu(data)
@@ -18,5 +18,10 @@ class TestUkazatele_zoznamu(TestCase):
     def test_ukazatele_zoznamu_sum(self):
         d = ukazatele_zoznamu(data)
         self.assertEqual(sum(data), 189)
+
+    def test_ukazatele_zoznamu_len(self):
+        data = [5]
+        d = ukazatele_zoznamu(data)
+        self.assertEqual(len(data), 1)
 
 
