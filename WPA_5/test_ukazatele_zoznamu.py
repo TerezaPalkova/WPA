@@ -20,8 +20,6 @@ class TestUkazatele_zoznamu(TestCase):
         self.assertEqual(sum(data), 189)
 
     def test_ukazatele_zoznamu_len(self):
-        data = [5]
+        data = ["l"]
         d = ukazatele_zoznamu(data)
-        self.assertEqual(len(data), 1)
-
-
+        self.assertRaises(TypeError, "l")
