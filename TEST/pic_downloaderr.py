@@ -34,3 +34,6 @@ def download(url: str, dest_folder: str):
 
 
 download(input("Please write your ULR address: "), input("Please write path: "))
+
+
+#nedavala som if __name__ == "__main__":  aby ti rovno isiel input
