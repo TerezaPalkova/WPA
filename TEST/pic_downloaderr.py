@@ -22,6 +22,10 @@ def download(url: str, dest_folder: str):
             pass
         else:
             one_url = (f"{url}{one_url}")
+        # toto nieje uplne korektne   kedze nie kazdy obrazok musi byt jpeg..
+        # chyba tu osetrenie a overenie, ci ten url je ozaj obrazok
+        # pri www.sme.sk to pada na:
+        #  urllib3.exceptions.LocationParseError: Failed to parse: https://www.sme.skdata:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
         img_name = one_url.split("/")[-1] + ".jpeg"
         file_path = os.path.join(dest_folder, img_name)
         r = requests.get(one_url, stream=True)
